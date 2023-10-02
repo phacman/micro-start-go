@@ -1,0 +1,9 @@
+.idea
+**/.git/
+*.log
+*.md
+img.png
+**/.gitignore
+**/Dockerfile
+**/.dockerignore
+Makefile

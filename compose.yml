@@ -1,0 +1,11 @@
+services:
+  go:
+    build:
+      context: .
+    env_file: .env
+    restart: on-failure
+    working_dir: /app
+    volumes:
+      - ./public:/app/public
+    ports:
+      - ${PORT_EXTERNAL}:${PORT_INTERNAL}
